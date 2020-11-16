@@ -33,6 +33,7 @@ namespace CompanyReferenceBook
             review = chkGood.Checked ? "Good" : "Very Good";
 
             display();
+            empty();
         }
 
         public void display()
@@ -52,6 +53,13 @@ namespace CompanyReferenceBook
 
             dt.Rows.Add(row);
             dtDataGridView.DataSource = dt;
+        }
+
+        public void empty()
+        {
+            txtDesignation.Text = "";
+            txtName.Text = "";
+            txtSalary.Text = "";
         }
     }
 }

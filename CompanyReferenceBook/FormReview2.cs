@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CompanyReferenceBook
 {
-    public partial class FormReview2 : Form
+    public partial class MainForm : Form
     {
-        public FormReview2()
+        public MainForm()
         {
             InitializeComponent();
         }
