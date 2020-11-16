@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.sideMenuTeamButton = new System.Windows.Forms.Button();
-            this.sideMenuTasksButton = new System.Windows.Forms.Button();
-            this.sideMenuUXButton = new System.Windows.Forms.Button();
-            this.sideMenuMNotesButton = new System.Windows.Forms.Button();
-            this.sideMenuReportsButton = new System.Windows.Forms.Button();
-            this.sideMenuRoadmapButton = new System.Windows.Forms.Button();
-            this.sideMenuInsightsButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.главнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sideMenuInsightsButton = new System.Windows.Forms.Button();
+            this.sideMenuRoadmapButton = new System.Windows.Forms.Button();
+            this.sideMenuReportsButton = new System.Windows.Forms.Button();
+            this.sideMenuMNotesButton = new System.Windows.Forms.Button();
+            this.sideMenuUXButton = new System.Windows.Forms.Button();
+            this.sideMenuTasksButton = new System.Windows.Forms.Button();
+            this.sideMenuTeamButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,121 +61,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(367, 833);
             this.panel1.TabIndex = 0;
-            // 
-            // sideMenuTeamButton
-            // 
-            this.sideMenuTeamButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuTeamButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuTeamButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuTeamButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuTeamButton.Image")));
-            this.sideMenuTeamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuTeamButton.Location = new System.Drawing.Point(17, 28);
-            this.sideMenuTeamButton.Name = "sideMenuTeamButton";
-            this.sideMenuTeamButton.Size = new System.Drawing.Size(252, 61);
-            this.sideMenuTeamButton.TabIndex = 1;
-            this.sideMenuTeamButton.Text = "  Команда";
-            this.sideMenuTeamButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuTasksButton
-            // 
-            this.sideMenuTasksButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuTasksButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuTasksButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuTasksButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuTasksButton.Image")));
-            this.sideMenuTasksButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuTasksButton.Location = new System.Drawing.Point(17, 95);
-            this.sideMenuTasksButton.Name = "sideMenuTasksButton";
-            this.sideMenuTasksButton.Size = new System.Drawing.Size(229, 61);
-            this.sideMenuTasksButton.TabIndex = 2;
-            this.sideMenuTasksButton.Text = "  Задачи";
-            this.sideMenuTasksButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuUXButton
-            // 
-            this.sideMenuUXButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuUXButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuUXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuUXButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuUXButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuUXButton.Image")));
-            this.sideMenuUXButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuUXButton.Location = new System.Drawing.Point(17, 162);
-            this.sideMenuUXButton.Name = "sideMenuUXButton";
-            this.sideMenuUXButton.Size = new System.Drawing.Size(345, 61);
-            this.sideMenuUXButton.TabIndex = 3;
-            this.sideMenuUXButton.Text = "  Users Feedback";
-            this.sideMenuUXButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuMNotesButton
-            // 
-            this.sideMenuMNotesButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuMNotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuMNotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuMNotesButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuMNotesButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuMNotesButton.Image")));
-            this.sideMenuMNotesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuMNotesButton.Location = new System.Drawing.Point(17, 229);
-            this.sideMenuMNotesButton.Name = "sideMenuMNotesButton";
-            this.sideMenuMNotesButton.Size = new System.Drawing.Size(345, 61);
-            this.sideMenuMNotesButton.TabIndex = 4;
-            this.sideMenuMNotesButton.Text = "  Заметки встреч";
-            this.sideMenuMNotesButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuReportsButton
-            // 
-            this.sideMenuReportsButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuReportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuReportsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuReportsButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuReportsButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuReportsButton.Image")));
-            this.sideMenuReportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuReportsButton.Location = new System.Drawing.Point(17, 296);
-            this.sideMenuReportsButton.Name = "sideMenuReportsButton";
-            this.sideMenuReportsButton.Size = new System.Drawing.Size(345, 61);
-            this.sideMenuReportsButton.TabIndex = 5;
-            this.sideMenuReportsButton.Text = "  Product Reports";
-            this.sideMenuReportsButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuRoadmapButton
-            // 
-            this.sideMenuRoadmapButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuRoadmapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuRoadmapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuRoadmapButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuRoadmapButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuRoadmapButton.Image")));
-            this.sideMenuRoadmapButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuRoadmapButton.Location = new System.Drawing.Point(17, 363);
-            this.sideMenuRoadmapButton.Name = "sideMenuRoadmapButton";
-            this.sideMenuRoadmapButton.Size = new System.Drawing.Size(261, 61);
-            this.sideMenuRoadmapButton.TabIndex = 6;
-            this.sideMenuRoadmapButton.Text = "  Roadmap";
-            this.sideMenuRoadmapButton.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuInsightsButton
-            // 
-            this.sideMenuInsightsButton.FlatAppearance.BorderSize = 0;
-            this.sideMenuInsightsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideMenuInsightsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sideMenuInsightsButton.ForeColor = System.Drawing.Color.Gray;
-            this.sideMenuInsightsButton.Image = ((System.Drawing.Image)(resources.GetObject("sideMenuInsightsButton.Image")));
-            this.sideMenuInsightsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sideMenuInsightsButton.Location = new System.Drawing.Point(17, 430);
-            this.sideMenuInsightsButton.Name = "sideMenuInsightsButton";
-            this.sideMenuInsightsButton.Size = new System.Drawing.Size(335, 61);
-            this.sideMenuInsightsButton.TabIndex = 7;
-            this.sideMenuInsightsButton.Text = "  Insights&Memos";
-            this.sideMenuInsightsButton.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(367, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1066, 871);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -208,6 +93,121 @@
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(96, 36);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
+            // sideMenuInsightsButton
+            // 
+            this.sideMenuInsightsButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuInsightsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuInsightsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuInsightsButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuInsightsButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_insights;
+            this.sideMenuInsightsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuInsightsButton.Location = new System.Drawing.Point(17, 430);
+            this.sideMenuInsightsButton.Name = "sideMenuInsightsButton";
+            this.sideMenuInsightsButton.Size = new System.Drawing.Size(335, 61);
+            this.sideMenuInsightsButton.TabIndex = 7;
+            this.sideMenuInsightsButton.Text = "  Insights&Memos";
+            this.sideMenuInsightsButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuRoadmapButton
+            // 
+            this.sideMenuRoadmapButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuRoadmapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuRoadmapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuRoadmapButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuRoadmapButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_roadmap;
+            this.sideMenuRoadmapButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuRoadmapButton.Location = new System.Drawing.Point(17, 363);
+            this.sideMenuRoadmapButton.Name = "sideMenuRoadmapButton";
+            this.sideMenuRoadmapButton.Size = new System.Drawing.Size(261, 61);
+            this.sideMenuRoadmapButton.TabIndex = 6;
+            this.sideMenuRoadmapButton.Text = "  Roadmap";
+            this.sideMenuRoadmapButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuReportsButton
+            // 
+            this.sideMenuReportsButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuReportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuReportsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuReportsButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuReportsButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_reports;
+            this.sideMenuReportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuReportsButton.Location = new System.Drawing.Point(17, 296);
+            this.sideMenuReportsButton.Name = "sideMenuReportsButton";
+            this.sideMenuReportsButton.Size = new System.Drawing.Size(345, 61);
+            this.sideMenuReportsButton.TabIndex = 5;
+            this.sideMenuReportsButton.Text = "  Product Reports";
+            this.sideMenuReportsButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuMNotesButton
+            // 
+            this.sideMenuMNotesButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuMNotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuMNotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuMNotesButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuMNotesButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_meetingNotes;
+            this.sideMenuMNotesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuMNotesButton.Location = new System.Drawing.Point(17, 229);
+            this.sideMenuMNotesButton.Name = "sideMenuMNotesButton";
+            this.sideMenuMNotesButton.Size = new System.Drawing.Size(345, 61);
+            this.sideMenuMNotesButton.TabIndex = 4;
+            this.sideMenuMNotesButton.Text = "  Заметки встреч";
+            this.sideMenuMNotesButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuUXButton
+            // 
+            this.sideMenuUXButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuUXButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuUXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuUXButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuUXButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_ux;
+            this.sideMenuUXButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuUXButton.Location = new System.Drawing.Point(17, 162);
+            this.sideMenuUXButton.Name = "sideMenuUXButton";
+            this.sideMenuUXButton.Size = new System.Drawing.Size(345, 61);
+            this.sideMenuUXButton.TabIndex = 3;
+            this.sideMenuUXButton.Text = "  Users Feedback";
+            this.sideMenuUXButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuTasksButton
+            // 
+            this.sideMenuTasksButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuTasksButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuTasksButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuTasksButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_tasks;
+            this.sideMenuTasksButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuTasksButton.Location = new System.Drawing.Point(17, 95);
+            this.sideMenuTasksButton.Name = "sideMenuTasksButton";
+            this.sideMenuTasksButton.Size = new System.Drawing.Size(229, 61);
+            this.sideMenuTasksButton.TabIndex = 2;
+            this.sideMenuTasksButton.Text = "  Задачи";
+            this.sideMenuTasksButton.UseVisualStyleBackColor = true;
+            // 
+            // sideMenuTeamButton
+            // 
+            this.sideMenuTeamButton.FlatAppearance.BorderSize = 0;
+            this.sideMenuTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sideMenuTeamButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sideMenuTeamButton.ForeColor = System.Drawing.Color.Gray;
+            this.sideMenuTeamButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_team;
+            this.sideMenuTeamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sideMenuTeamButton.Location = new System.Drawing.Point(17, 28);
+            this.sideMenuTeamButton.Name = "sideMenuTeamButton";
+            this.sideMenuTeamButton.Size = new System.Drawing.Size(252, 61);
+            this.sideMenuTeamButton.TabIndex = 1;
+            this.sideMenuTeamButton.Text = "  Команда";
+            this.sideMenuTeamButton.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CompanyReferenceBook.Properties.Resources.carl_heyerdahl_KE0nC8_58MQ_unsplash3333;
+            this.pictureBox1.Location = new System.Drawing.Point(367, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1066, 871);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -225,9 +225,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "workspace";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
