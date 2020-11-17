@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace CompanyReferenceBook
 {
-    public partial class MainForm : Form
+    public partial class Registration : Form
     {
-        public MainForm()
+        public Registration()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
