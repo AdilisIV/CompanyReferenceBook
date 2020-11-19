@@ -26,5 +26,11 @@ namespace CompanyReferenceBook
         {
 
         }
+
+        private void sideMenuTeamButton_Click(object sender, EventArgs e)
+        {
+            Registration s = new Registration();
+            s.Show();
+        }
     }
 }

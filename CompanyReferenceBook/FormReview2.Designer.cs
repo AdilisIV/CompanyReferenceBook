@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.sideMenuTeamButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(184, 430);
             this.panel1.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.sideMenuInsightsButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_insights;
             this.sideMenuInsightsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuInsightsButton.Location = new System.Drawing.Point(8, 224);
-            this.sideMenuInsightsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuInsightsButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuInsightsButton.Name = "sideMenuInsightsButton";
             this.sideMenuInsightsButton.Size = new System.Drawing.Size(168, 32);
             this.sideMenuInsightsButton.TabIndex = 7;
@@ -88,7 +88,7 @@
             this.sideMenuRoadmapButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_roadmap;
             this.sideMenuRoadmapButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuRoadmapButton.Location = new System.Drawing.Point(8, 189);
-            this.sideMenuRoadmapButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuRoadmapButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuRoadmapButton.Name = "sideMenuRoadmapButton";
             this.sideMenuRoadmapButton.Size = new System.Drawing.Size(130, 32);
             this.sideMenuRoadmapButton.TabIndex = 6;
@@ -104,7 +104,7 @@
             this.sideMenuReportsButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_reports;
             this.sideMenuReportsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuReportsButton.Location = new System.Drawing.Point(8, 154);
-            this.sideMenuReportsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuReportsButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuReportsButton.Name = "sideMenuReportsButton";
             this.sideMenuReportsButton.Size = new System.Drawing.Size(172, 32);
             this.sideMenuReportsButton.TabIndex = 5;
@@ -120,7 +120,7 @@
             this.sideMenuMNotesButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_meetingNotes;
             this.sideMenuMNotesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuMNotesButton.Location = new System.Drawing.Point(8, 119);
-            this.sideMenuMNotesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuMNotesButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuMNotesButton.Name = "sideMenuMNotesButton";
             this.sideMenuMNotesButton.Size = new System.Drawing.Size(172, 32);
             this.sideMenuMNotesButton.TabIndex = 4;
@@ -136,7 +136,7 @@
             this.sideMenuUXButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_ux;
             this.sideMenuUXButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuUXButton.Location = new System.Drawing.Point(8, 84);
-            this.sideMenuUXButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuUXButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuUXButton.Name = "sideMenuUXButton";
             this.sideMenuUXButton.Size = new System.Drawing.Size(172, 32);
             this.sideMenuUXButton.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.sideMenuTasksButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_tasks;
             this.sideMenuTasksButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuTasksButton.Location = new System.Drawing.Point(8, 49);
-            this.sideMenuTasksButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuTasksButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuTasksButton.Name = "sideMenuTasksButton";
             this.sideMenuTasksButton.Size = new System.Drawing.Size(114, 32);
             this.sideMenuTasksButton.TabIndex = 2;
@@ -168,12 +168,13 @@
             this.sideMenuTeamButton.Image = global::CompanyReferenceBook.Properties.Resources.sidemenu_icon_team;
             this.sideMenuTeamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sideMenuTeamButton.Location = new System.Drawing.Point(8, 15);
-            this.sideMenuTeamButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sideMenuTeamButton.Margin = new System.Windows.Forms.Padding(2);
             this.sideMenuTeamButton.Name = "sideMenuTeamButton";
             this.sideMenuTeamButton.Size = new System.Drawing.Size(126, 32);
             this.sideMenuTeamButton.TabIndex = 1;
             this.sideMenuTeamButton.Text = "  Команда";
             this.sideMenuTeamButton.UseVisualStyleBackColor = true;
+            this.sideMenuTeamButton.Click += new System.EventHandler(this.sideMenuTeamButton_Click);
             // 
             // menuStrip1
             // 
@@ -211,7 +212,7 @@
             // 
             this.pictureBox1.Image = global::CompanyReferenceBook.Properties.Resources.carl_heyerdahl_KE0nC8_58MQ_unsplash3333;
             this.pictureBox1.Location = new System.Drawing.Point(184, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(533, 453);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -229,7 +230,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
