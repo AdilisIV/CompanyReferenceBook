@@ -53,6 +53,7 @@ namespace CompanyReferenceBook
                     con.Close();
                     MessageBox.Show(" You Data has Been Saved in the Datbase ");
                     clear();
+                    display();
 
                 }
                 catch (Exception ex)
