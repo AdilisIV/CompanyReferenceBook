@@ -32,5 +32,10 @@ namespace CompanyReferenceBook
             Registration s = new Registration();
             s.Show();
         }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
