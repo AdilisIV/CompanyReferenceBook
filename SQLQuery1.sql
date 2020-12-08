@@ -16,3 +16,14 @@ Addrss varchar(50)
 select * from Employee
 truncate table employee
 insert into Employee values('Asif','Kareem Bux','Programmer','Admin@onlineittuts.com','102757','Male','Pakistan')
+
+create table LoginUsers
+(
+U_ID int primary key identity(1,1),
+U_Name varchar(50),
+U_Pass varchar(50),
+)
+
+select * from LoginUsers
+insert into LoginUsers values ('admin','admin')
+
