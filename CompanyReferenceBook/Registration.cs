@@ -116,7 +116,6 @@ namespace CompanyReferenceBook
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             try
             {
 
@@ -138,10 +137,11 @@ namespace CompanyReferenceBook
                 display();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -156,7 +156,20 @@ namespace CompanyReferenceBook
 
         private void button3_Click(object sender, EventArgs e)
         {
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand("delete from Employee where Employee_Id='" + ID + "'", con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Your Record Has Been Deleted");
+                display();
 
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
