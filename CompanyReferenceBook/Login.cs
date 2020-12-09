@@ -60,5 +60,17 @@ namespace CompanyReferenceBook
             //SqlConnection con=new SqlConnection()
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            New_user_registration om = new New_user_registration();
+            this.Hide();
+            om.Show();
+        }
+
+        private void txtUName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
