@@ -29,7 +29,7 @@ namespace CompanyReferenceBook
 
         private void sideMenuTeamButton_Click(object sender, EventArgs e)
         {
-            Registration s = new Registration();
+            TeamListForm s = new TeamListForm();
             s.Show();
         }
 

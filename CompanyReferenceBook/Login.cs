@@ -13,10 +13,12 @@ namespace CompanyReferenceBook
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=SAMSUNG\\SQLEXPRESS;Initial Catalog=registration;Integrated Security=True;");
+        string path = DbConnection.GetInstance().path;
+        SqlConnection con;
         public Login()
         {
             InitializeComponent();
+            con = new SqlConnection(path);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

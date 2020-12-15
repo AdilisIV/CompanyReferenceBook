@@ -15,7 +15,7 @@ namespace CompanyReferenceBook
     public partial class Registration : Form
     {
         //String Connection
-        string path = @"Data Source=SAMSUNG\SQLEXPRESS;Initial Catalog=registration;Integrated Security=True";
+        string path = DbConnection.GetInstance().path;
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adpt;
