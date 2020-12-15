@@ -121,6 +121,9 @@
   <data name="sidemenu-icon-reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidemenu-icon-reports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sidemenu-icon-tasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidemenu-icon-tasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,10 +139,16 @@
   <data name="sidemenu-icon-team" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidemenu-icon-team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sidemenu-icon-insights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sidemenu-icon-insights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sidemenu-icon-roadmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidemenu-icon-roadmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sidemenu-icon-insights" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sidemenu-icon-insights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
