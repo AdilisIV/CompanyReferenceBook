@@ -74,6 +74,7 @@ namespace CompanyReferenceBook
             } else
             {
                 // нужно будет дописать добавление страницы с таблицей...
+                MessageBox.Show("В разработке:)");
             }
         }
 
