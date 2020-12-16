@@ -35,12 +35,12 @@
             this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sideMenuPanel = new System.Windows.Forms.Panel();
-            this.pageAddingLabel = new System.Windows.Forms.Label();
+            this.addNewPageComboBox = new System.Windows.Forms.ComboBox();
             this.addButton = new System.Windows.Forms.Button();
+            this.pageAddingLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.addNewPageComboBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.sideMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -94,6 +94,27 @@
             this.sideMenuPanel.TabIndex = 0;
             this.sideMenuPanel.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
             // 
+            // addNewPageComboBox
+            // 
+            this.addNewPageComboBox.FormattingEnabled = true;
+            this.addNewPageComboBox.Location = new System.Drawing.Point(359, 39);
+            this.addNewPageComboBox.Name = "addNewPageComboBox";
+            this.addNewPageComboBox.Size = new System.Drawing.Size(121, 33);
+            this.addNewPageComboBox.TabIndex = 3;
+            this.addNewPageComboBox.SelectedIndexChanged += new System.EventHandler(this.addNewPageComboBox_SelectedIndexChanged);
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addButton.Location = new System.Drawing.Point(416, 4);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(46, 42);
+            this.addButton.TabIndex = 1;
+            this.addButton.Text = "+";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
             // pageAddingLabel
             // 
             this.pageAddingLabel.AutoSize = true;
@@ -104,18 +125,6 @@
             this.pageAddingLabel.Size = new System.Drawing.Size(159, 33);
             this.pageAddingLabel.TabIndex = 0;
             this.pageAddingLabel.Text = "Страницы";
-            // 
-            // addButton
-            // 
-            this.addButton.BackColor = System.Drawing.Color.LightBlue;
-            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addButton.Location = new System.Drawing.Point(416, 4);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(46, 42);
-            this.addButton.TabIndex = 1;
-            this.addButton.Text = "+";
-            this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // pictureBox1
             // 
@@ -128,15 +137,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
-            // 
-            // addNewPageComboBox
-            // 
-            this.addNewPageComboBox.FormattingEnabled = true;
-            this.addNewPageComboBox.Location = new System.Drawing.Point(359, 39);
-            this.addNewPageComboBox.Name = "addNewPageComboBox";
-            this.addNewPageComboBox.Size = new System.Drawing.Size(121, 33);
-            this.addNewPageComboBox.TabIndex = 3;
-            this.addNewPageComboBox.SelectedIndexChanged += new System.EventHandler(this.addNewPageComboBox_SelectedIndexChanged);
             // 
             // MainForm
             // 

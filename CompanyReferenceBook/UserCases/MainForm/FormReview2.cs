@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using CompanyReferenceBook.UserCases.MainForm.Components.Models;
 using System.Data.Common;
 using CompanyReferenceBook.UserCases.TextNoteForm;
+using CompanyReferenceBook.UserCases.AddTextNoteForm;
 
 namespace CompanyReferenceBook
 {
@@ -68,7 +69,8 @@ namespace CompanyReferenceBook
             addNewPageComboBox.Hide();
             if (addNewPageComboBox.SelectedItem.ToString() == "Пустая страница")
             {
-                MessageBox.Show("Go to add");
+                AddTextNoteForm s = new AddTextNoteForm();
+                s.Show();
             } else
             {
                 // нужно будет дописать добавление страницы с таблицей...

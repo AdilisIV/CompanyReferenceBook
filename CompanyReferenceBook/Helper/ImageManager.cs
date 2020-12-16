@@ -17,6 +17,10 @@ namespace CompanyReferenceBook.Helper
         public static readonly Image iconTasks = Properties.Resources.sidemenu_icon_tasks_2x;
         public static readonly Image iconUX = Properties.Resources.sidemenu_icon_ux_2x;
 
+        internal static Image defaultNoteImage()
+        {
+            return iconInsights;
+        }
 
         internal static Image getImage(string name)
         {

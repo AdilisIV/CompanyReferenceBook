@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Helper\EmojiHelper.cs" />
     <Compile Include="Helper\ImageManager.cs" />
+    <Compile Include="UserCases\AddTextNoteForm\AddTextNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCases\AddTextNoteForm\AddTextNoteForm.Designer.cs">
+      <DependentUpon>AddTextNoteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserCases\MainForm\Components\Models\NoteModel.cs" />
     <Compile Include="UserCases\MainForm\Components\SideMenuListBox.cs">
       <SubType>Component</SubType>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCases\AddTextNoteForm\AddTextNoteForm.resx">
+      <DependentUpon>AddTextNoteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserCases\MainForm\FormReview2.resx">
       <DependentUpon>FormReview2.cs</DependentUpon>
@@ -245,6 +254,7 @@
     <None Include="Resources\sidemenu-icon-insights%402x.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="UserCases\AddTextNoteForm\Components\" />
     <Folder Include="UserCases\TextNoteForm\Components\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
