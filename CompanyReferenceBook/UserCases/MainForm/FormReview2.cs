@@ -36,6 +36,7 @@ namespace CompanyReferenceBook
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            updateUI();
             loadUserNotes();
             displaySideMenu();
             updateListBoxDataSource();
@@ -56,9 +57,28 @@ namespace CompanyReferenceBook
             Environment.Exit(0);
         }
 
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            addNewPageComboBox.Show();
+            addNewPageComboBox.DroppedDown = true;
+        }
+
+        private void addNewPageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            addNewPageComboBox.Hide();
+            if (addNewPageComboBox.SelectedItem.ToString() == "Пустая страница")
+            {
+                MessageBox.Show("Go to add");
+            } else
+            {
+                // нужно будет дописать добавление страницы с таблицей...
+            }
+        }
+
         void selectEvent(object sender, EventArgs e)
         {
             if (this._menuSelectedIndex == null) { return; }
+
             SideMenuListItem selectedItem = ((sender as SideMenuListBox).SelectedItem as SideMenuListItem);
             if (selectedItem == null) { return; }
 
@@ -78,6 +98,18 @@ namespace CompanyReferenceBook
 
 
         // private
+
+        private void Mouse_MoveOut_FromComboBox_With(object sender, EventArgs e)
+        {
+            addNewPageComboBox.Hide();
+        }
+
+        private void updateUI()
+        {
+            addNewPageComboBox.Hide();
+            addNewPageComboBox.Items.Add("Пустая страница");
+            addNewPageComboBox.Items.Add("Страница с таблицей");
+        }
 
         private void loadUserNotes()
         {

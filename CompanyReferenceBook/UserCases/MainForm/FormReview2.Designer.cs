@@ -36,10 +36,11 @@
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sideMenuPanel = new System.Windows.Forms.Panel();
             this.pageAddingLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.addNewPageComboBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.sideMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +59,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1416, 40);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
             // 
             // главнаяToolStripMenuItem
             // 
@@ -81,7 +83,8 @@
             // sideMenuPanel
             // 
             this.sideMenuPanel.BackColor = System.Drawing.Color.White;
-            this.sideMenuPanel.Controls.Add(this.button1);
+            this.sideMenuPanel.Controls.Add(this.addNewPageComboBox);
+            this.sideMenuPanel.Controls.Add(this.addButton);
             this.sideMenuPanel.Controls.Add(this.pageAddingLabel);
             this.sideMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideMenuPanel.Location = new System.Drawing.Point(0, 40);
@@ -89,6 +92,7 @@
             this.sideMenuPanel.Name = "sideMenuPanel";
             this.sideMenuPanel.Size = new System.Drawing.Size(480, 833);
             this.sideMenuPanel.TabIndex = 0;
+            this.sideMenuPanel.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
             // 
             // pageAddingLabel
             // 
@@ -101,16 +105,17 @@
             this.pageAddingLabel.TabIndex = 0;
             this.pageAddingLabel.Text = "Страницы";
             // 
-            // button1
+            // addButton
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(416, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = false;
+            this.addButton.BackColor = System.Drawing.Color.LightBlue;
+            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addButton.Location = new System.Drawing.Point(416, 4);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(46, 42);
+            this.addButton.TabIndex = 1;
+            this.addButton.Text = "+";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // pictureBox1
             // 
@@ -122,6 +127,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
+            // 
+            // addNewPageComboBox
+            // 
+            this.addNewPageComboBox.FormattingEnabled = true;
+            this.addNewPageComboBox.Location = new System.Drawing.Point(359, 39);
+            this.addNewPageComboBox.Name = "addNewPageComboBox";
+            this.addNewPageComboBox.Size = new System.Drawing.Size(121, 33);
+            this.addNewPageComboBox.TabIndex = 3;
+            this.addNewPageComboBox.SelectedIndexChanged += new System.EventHandler(this.addNewPageComboBox_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -142,6 +157,7 @@
             this.Text = "workspace";
             this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.MouseEnter += new System.EventHandler(this.Mouse_MoveOut_FromComboBox_With);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.sideMenuPanel.ResumeLayout(false);
@@ -161,8 +177,9 @@
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Panel sideMenuPanel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Label pageAddingLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox addNewPageComboBox;
     }
 }
