@@ -157,7 +157,8 @@ namespace CompanyReferenceBook
             customListControl.Location = new Point(0, 28);
             customListControl.BorderStyle = BorderStyle.None;
             Size listControlSize = this.sideMenuPanel.Size;
-            customListControl.Size = listControlSize;
+
+            customListControl.Size = new Size(listControlSize.Width, 360);
             customListControl.SelectedIndexChanged += new EventHandler(selectEvent);
 
             this.sideMenuPanel.Controls.Add(customListControl);
