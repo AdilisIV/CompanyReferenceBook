@@ -113,9 +113,29 @@ namespace CompanyReferenceBook.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_insights_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-insights@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sidemenu_icon_meetingNotes {
             get {
                 object obj = ResourceManager.GetObject("sidemenu-icon-meetingNotes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_meetingNotes_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-meetingNotes@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +153,29 @@ namespace CompanyReferenceBook.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_reports_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-reports@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sidemenu_icon_roadmap {
             get {
                 object obj = ResourceManager.GetObject("sidemenu-icon-roadmap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_roadmap_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-roadmap@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +193,16 @@ namespace CompanyReferenceBook.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_tasks_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-tasks@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sidemenu_icon_team {
             get {
                 object obj = ResourceManager.GetObject("sidemenu-icon-team", resourceCulture);
@@ -163,9 +213,39 @@ namespace CompanyReferenceBook.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_team_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-team@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_team_3x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-team@3x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sidemenu_icon_ux {
             get {
                 object obj = ResourceManager.GetObject("sidemenu-icon-ux", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidemenu_icon_ux_2x {
+            get {
+                object obj = ResourceManager.GetObject("sidemenu-icon-ux@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

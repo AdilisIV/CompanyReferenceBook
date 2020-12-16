@@ -58,10 +58,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReview2.cs">
+    <Compile Include="Helper\ImageManager.cs" />
+    <Compile Include="UserCases\MainForm\Components\Models\NoteModel.cs" />
+    <Compile Include="UserCases\MainForm\Components\SideMenuListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserCases\MainForm\Components\SideMenuListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserCases\MainForm\Components\SideMenuListBoxControl.Designer.cs">
+      <DependentUpon>SideMenuListBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCases\MainForm\Components\SideMenuListItem.cs" />
+    <Compile Include="UserCases\MainForm\FormReview2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReview2.Designer.cs">
+    <Compile Include="UserCases\MainForm\FormReview2.Designer.cs">
       <DependentUpon>FormReview2.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\DbConnection.cs" />
@@ -85,6 +97,18 @@
     <Compile Include="TeamListForm.Designer.cs">
       <DependentUpon>TeamListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserCases\MainForm\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCases\MainForm\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCases\TextNoteForm\TextNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCases\TextNoteForm\TextNoteForm.Designer.cs">
+      <DependentUpon>TextNoteForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ComboBox.resx">
       <DependentUpon>ComboBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,7 +121,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReview2.resx">
+    <EmbeddedResource Include="UserCases\MainForm\FormReview2.resx">
       <DependentUpon>FormReview2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -121,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeamListForm.resx">
       <DependentUpon>TeamListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCases\MainForm\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCases\TextNoteForm\TextNoteForm.resx">
+      <DependentUpon>TextNoteForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -194,6 +224,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-team%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-team%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-tasks%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-ux%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-meetingNotes%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-reports%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-roadmap%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidemenu-icon-insights%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserCases\TextNoteForm\Components\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
