@@ -58,16 +58,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\EmojiHelper.cs" />
     <Compile Include="Helper\ImageManager.cs" />
     <Compile Include="UserCases\MainForm\Components\Models\NoteModel.cs" />
     <Compile Include="UserCases\MainForm\Components\SideMenuListBox.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UserCases\MainForm\Components\SideMenuListBoxControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UserCases\MainForm\Components\SideMenuListBoxControl.Designer.cs">
-      <DependentUpon>SideMenuListBoxControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UserCases\MainForm\Components\SideMenuListItem.cs" />
     <Compile Include="UserCases\MainForm\FormReview2.cs">

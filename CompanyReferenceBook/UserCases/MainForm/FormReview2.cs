@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using CompanyReferenceBook.UserCases.MainForm.Components.Models;
 using System.Data.Common;
+using CompanyReferenceBook.UserCases.TextNoteForm;
 
 namespace CompanyReferenceBook
 {
@@ -37,6 +38,17 @@ namespace CompanyReferenceBook
         {
             loadUserNotes();
             displaySideMenu();
+            updateListBoxDataSource();
+        }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            // обновление бокового меню из данных бд которые возможно обновились
+            Console.WriteLine("MainForm_Activated");
+            loadUserNotes();
+            updateListBoxDataSource();
+
+            Console.WriteLine("See count of element = " + _menuBindingList.Count());
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,21 +58,22 @@ namespace CompanyReferenceBook
 
         void selectEvent(object sender, EventArgs e)
         {
-            //Console.WriteLine(this.customListControl.SelectedIndex.ToString());
             if (this._menuSelectedIndex == null) { return; }
             SideMenuListItem selectedItem = ((sender as SideMenuListBox).SelectedItem as SideMenuListItem);
-            if (selectedItem == null)
-            {
-                return;
-            }
+            if (selectedItem == null) { return; }
+
             if (selectedItem.Title == "Команда")
             {
                 TeamListForm s = new TeamListForm();
                 s.Show();
+            } else
+            {
+                TextNoteForm noteForm = new TextNoteForm(this.notesList[(sender as SideMenuListBox).SelectedIndex]);
+                noteForm.Show();
             }
 
             this._menuSelectedIndex = this.customListControl.SelectedIndex;
-            (sender as SideMenuListBox).ClearSelected();
+            //(sender as SideMenuListBox).ClearSelected();
         }
 
 
@@ -68,6 +81,8 @@ namespace CompanyReferenceBook
 
         private void loadUserNotes()
         {
+            this.notesList.Clear();
+
             string sql = "select * from UserNotes";
             con.Open();
 
@@ -87,7 +102,8 @@ namespace CompanyReferenceBook
 
                     while (reader.Read())
                     {
-                        NoteModel model = new NoteModel();
+                        int noteId = reader.GetInt32(noteIdCol);
+                        NoteModel model = new NoteModel(noteId);
                         model.title = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteTitleCol);
                         model.icon = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteIconCol);
                         model.text = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteTextCol);
@@ -114,16 +130,22 @@ namespace CompanyReferenceBook
             customListControl.ResumeLayout();
 
             _menuBindingList = new BindingList<SideMenuListItem>();
+            customListControl.DataSource = _menuBindingList;
+            customListControl.BindingContext = new BindingContext();
+            customListControl.ClearSelected();
+            this._menuSelectedIndex = 0; // локальная переменная
+        }
+
+        private void updateListBoxDataSource()
+        {
+            _menuBindingList.Clear();
 
             for (int i = 0; i < this.notesList.Count(); i++)
             {
                 NoteModel model = this.notesList[i];
                 _menuBindingList.Add(new SideMenuListItem { Title = model.title, IconImage = model.icon });
             }
-
-            customListControl.DataSource = _menuBindingList;
-            customListControl.ClearSelected();
-            this._menuSelectedIndex = 0; // локальная переменная
         }
+
     }
 }

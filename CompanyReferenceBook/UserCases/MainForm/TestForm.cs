@@ -58,7 +58,8 @@ namespace CompanyReferenceBook.UserCases.MainForm
 
                     while (reader.Read())
                     {
-                        NoteModel model = new NoteModel();
+                        int noteId = reader.GetInt32(noteIdCol);
+                        NoteModel model = new NoteModel(noteId);
                         model.title = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteTitleCol);
                         model.icon = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteIconCol);
                         model.text = reader.IsDBNull(noteTitleCol) ? " " : reader.GetString(noteTextCol);

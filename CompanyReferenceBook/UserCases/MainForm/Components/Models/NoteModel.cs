@@ -7,30 +7,34 @@ using System.Threading.Tasks;
 namespace CompanyReferenceBook.UserCases.MainForm.Components.Models
 {
 
-    class NoteModel
+    public class NoteModel
     {
+        public int id;
         public string title;
         public string icon;
         public string text;
         public string tableData;
 
-        public NoteModel(string title, string icon)
+        public NoteModel(int id, string title, string icon)
         {
+            this.id = id;
             this.title = title;
             this.icon = icon;
             this.text = "";
             this.tableData = "";
         }
 
-        public NoteModel(string title, string icon, string text)
+        public NoteModel(int id, string title, string icon, string text)
         {
+            this.id = id;
             this.title = title;
             this.icon = icon;
             this.text = text;
         }
 
-        public NoteModel()
+        public NoteModel(int id)
         {
+            this.id = id;
             this.title = "";
             this.icon = "";
             this.text = "";
