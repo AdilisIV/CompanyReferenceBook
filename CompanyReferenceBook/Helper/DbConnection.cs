@@ -12,7 +12,7 @@ public class DbConnection
 
     private DbConnection()
     {
-        path = @"Data Source=DESKTOP-M3TGEAF;Initial Catalog=registration;Integrated Security=True";
+        path = @"Data Source=SAMSUNG\SQLEXPRESS;Initial Catalog=registration;Integrated Security=True";
     }
 
     public static DbConnection GetInstance()

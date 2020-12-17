@@ -91,5 +91,10 @@ namespace CompanyReferenceBook
             }
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = filterStr;
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

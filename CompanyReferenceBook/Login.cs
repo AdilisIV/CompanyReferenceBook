@@ -74,5 +74,10 @@ namespace CompanyReferenceBook
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
