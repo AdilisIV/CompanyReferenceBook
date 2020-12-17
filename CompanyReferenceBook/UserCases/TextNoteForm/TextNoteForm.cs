@@ -96,8 +96,17 @@ namespace CompanyReferenceBook.UserCases.TextNoteForm
         private string getEmojiRep()
         {
             string[] emojiList = emojiHelper.getEmojiList();
-            string emoji = emojiList[emojiComboBox.SelectedIndex];
-            string emojiRep = emojiHelper.getDbEmojiRepresentation(emoji);
+
+            string emojiRep;
+            if (emojiComboBox.SelectedIndex >= 0) // значение в comboBox было изменено
+            {
+                string emoji = emojiList[emojiComboBox.SelectedIndex];
+                emojiRep = emojiHelper.getDbEmojiRepresentation(emoji);
+            } else // значение в comboBox осталось прежним -1 (возьмем тот emoji которые уже установлен для note)
+            {
+                emojiRep = model.icon;
+            }
+
             return emojiRep;
         }
 
