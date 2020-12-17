@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CompanyReferenceBook.UserCases.MainForm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace CompanyReferenceBook
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new MainForm());
         }
     }
 }
