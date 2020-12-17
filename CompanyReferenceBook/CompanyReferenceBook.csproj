@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComboBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ComboBox.Designer.cs">
-      <DependentUpon>ComboBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Helper\EmojiHelper.cs" />
     <Compile Include="Helper\ImageManager.cs" />
     <Compile Include="UserCases\AddTextNoteForm\AddTextNoteForm.cs">
@@ -104,18 +92,12 @@
     <Compile Include="UserCases\TextNoteForm\TextNoteForm.Designer.cs">
       <DependentUpon>TextNoteForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ComboBox.resx">
-      <DependentUpon>ComboBox.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="UserCases\AddEmpoloyee\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserCases\AddEmpoloyee\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserCases\AddTextNoteForm\AddTextNoteForm.resx">
       <DependentUpon>AddTextNoteForm.cs</DependentUpon>
     </EmbeddedResource>
